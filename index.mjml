@@ -1,18 +1,27 @@
 <mjml>
-  <!-- <mj-head>
-        <mj-title>1st tutorial</mj-title>
-        <mj-attributes>
-            
-        </mj-attributes>
-    </mj-head> -->
-  <mj-body>
-    <mj-section background-color="yellow">
-      <mj-column>
-        <mj-text>This is the title</mj-text>
-      </mj-column>
-            <mj-column>
-        <mj-text>This is the title</mj-text>
-      </mj-column>
-    </mj-section>
+<mj-head>
+
+    <mj-style>
+      *{
+        box-sizing: border-box;  
+       }
+    </mj-style>
+
+    <mj-style inline="inline">
+      .header{
+        background-color: #004c3f;
+
+      }
+      .section-padding{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    </mj-style>
+</mj-head>
+
+  <mj-body background-color="#f2f2f2">
+    <mj-include path="./components/header.mjml"> 
+    <mj-include path="./components/footer.mjml"> 
   </mj-body>
+
 </mjml>
