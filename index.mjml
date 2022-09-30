@@ -1,47 +1,104 @@
 <mjml>
-<mj-head>
+  <mj-head>
 
     <mj-style>
-      *{
-        box-sizing: border-box;  
-       }
+      * {
+        box-sizing: border-box;
+      }
+
+      .link-color {
+        color: #004c3f;
+        text-decoration: none;
+      }
+
+      .link-color:hover {
+        font-weight: bold;
+        color: #004c3f;
+        text-decoration: underline;
+      }
+
+      .small-link-color {
+        color: #008060;
+        text-decoration: none;
+      }
+
+      .small-link-color:hover {
+        font-weight: bold;
+        color: #008060;
+        text-decoration: underline;
+      }
     </mj-style>
 
     <mj-style inline="inline">
-      .header{
+      .header {
         background-color: #004c3f;
 
       }
-      .section-padding{
+
+      .section-padding {
         padding-left: 30px;
         padding-right: 30px;
       }
-
-      
     </mj-style>
-</mj-head>
+  </mj-head>
 
   <mj-body background-color="#f2f2f2">
-    <mj-include path="./components/header.mjml"> 
+    <mj-include path="./components/header.mjml"/>
+      <mj-raw>
+      <!-- Top section -->
+      </mj-raw>
+      <mj-section background-color="#ffffff">
+        <mj-column padding="20px 0 30px 0">
+          <mj-text css-class="header-title" font-size="58px" color="#004c3f" font-weight="bold">
+            What's new
+          </mj-text>
 
-    <mj-section>
-      <mj-column padding="20px 0 30px 0">
-        <mj-text css-class="header-title" font-size="58px" 
-        color="#004c3f"  font-weight="bold">
-          What's new
-        </mj-text>
+          <mj-text css-class="header-title" font-size="18px" color="#004c3f" font-weight="normal">
+            July 18 2022
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
-        <mj-text css-class="header-title" font-size="18px" 
-        color="#004c3f"  font-weight="normal">
-          July 18 2022
-        </mj-text>        
-      </mj-column>
-    </mj-section>
+      <mj-include path="./components/3lines.mjml"/>
+
+        <mj-raw>
+          <!-- 2 column image with text -->
+        </mj-raw>
+
+        <mj-section background-color="#ffffff">
+          <mj-column>
+            <mj-image href="https://shopify.com/blog" padding-bottom="20px" src="http://127.0.0.1:5500/assets/image.jpg">
+          </mj-column>
+          <mj-column>
+            <mj-text color="#004c3f" font-size="22px" font-weight="bold" padding-bottom="20px">
+              <a href="https://shopify.com/blog" class="link-color">
+                Find more ways to sell with pre-orders</a>
+            </mj-text>
 
 
-    <mj-include path="./components/3lines.mjml"> 
+            <mj-text color="#004c3f" font-size="16px" font-weight="normal" line-height="20px" padding-bottom="20px">
+              We've gone and made selling even easier, with
+              pre-orders. Give your customers the ability to
+              pay now, pay a deposit, or pay later, and in the
+              process, increase your sales, forecast demand,
+              and create buzz for your products.
+            </mj-text>
 
-    <mj-include path="./components/footer.mjml"> 
+            <mj-text color="#008060" font-size="14px" font-weight="bold" padding-bottom="20px">
+              <a href="https://shopify.com/blog" class="small-link-color">
+                Learn more</a>
+            </mj-text>
+          </mj-column>
+        </mj-section>
+
+
+        <mj-include path="./components/3lines.mjml"/>
+
+
+
+
+
+          <mj-include path="./components/footer.mjml"/>
   </mj-body>
 
 </mjml>
